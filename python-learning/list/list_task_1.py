@@ -97,7 +97,8 @@ print(f"К сожалению на ужин не сможет придти {dinn
 del dinner[2]
 dinner.append('maradona')
 print(f"Приглашаю Вас на ужин дорогой, {dinner[2]}!")
-print(f'Список приглашенных: {dinner}')
+print(f'Список приглашенных: {dinner}. Количество = {len(dinner)}')
+
 
 dinner.insert(0, 'kaka')
 dinner.insert(2, 'runi')
@@ -105,7 +106,7 @@ dinner.append('pirlo')
 print(f"Приглашаю Вас на ужин дорогой, {dinner[0]}!")
 print(f"Приглашаю Вас на ужин дорогой, {dinner[2]}!")
 print(f"Приглашаю Вас на ужин дорогой, {dinner[5]}!")
-print(f'Список приглашенных: {dinner}')
+print(f'Список приглашенных: {dinner}. Количество = {len(dinner)}')
 
 print(f"К сожалению на ужин можно придти только двум людям.")
 minus_1 = dinner.pop()
@@ -123,4 +124,4 @@ print(f"Ужин состоится дорогой, {dinner[1]}!")
 
 del dinner [1]
 del dinner [0]
-print(f'Список оставшихся: {dinner}')
+print(f'Список оставшихся: {dinner}. Количество = {len(dinner)}')
