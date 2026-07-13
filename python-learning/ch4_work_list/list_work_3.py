@@ -11,7 +11,7 @@ print(players[0:4:2])
 
 # Перебор содержимого среза
 players = ['messi', 'ronaldo', 'kaka', 'runi', 'holand']
-print(f"Это мои любимые игроки:")
+print("Это мои любимые игроки:")
 for player in players[0:3]:
     print(player.title())
 
@@ -27,7 +27,7 @@ print(team_players)
 
 # Ошибка копирования списка
 
-pet_1 = ['dog','cat']
+pet_1 = ['dog', 'cat']
 pet_2 = pet_1
 
 pet_1.append('snake')
