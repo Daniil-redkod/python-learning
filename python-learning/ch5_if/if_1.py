@@ -81,3 +81,42 @@ print(car == 'subaru')
 
 print("\nIs car == 'audi'? I predict False")
 print(car == 'audi')
+
+# 5.2 Больше проверок условий
+test_1 = 'Messi'
+
+test_2 = 'messi'
+
+print("Test_1:")
+print(test_1 == test_2)
+print(test_1.lower() == test_2)
+
+test_1 = 12
+test_2 = 22
+
+print("Test_2:")
+print(test_1 >= test_2)
+print(test_1 <= test_2)
+print(test_1 != test_2)
+print(test_1 > test_2)
+print(test_1 < test_2)
+
+test_1 = 12
+test_2 = 22
+test_3 = 18
+
+print("Test_3:")
+print(test_1 >= test_2 and test_1 >= test_3)
+print(test_1 <= test_2 and test_1 <= test_3)
+print(test_1 >= test_2 and test_1 <= test_3)
+print(test_1 >= test_2 or test_1 <= test_3)
+
+print("Test_4:")
+
+test_1 = ['messi', ' ronaldo', 'runi']
+print('runi' in test_1)
+print('run' in test_1)
+
+test_2 = 'holand'
+if test_2 not in test_1:
+    print("Нужно добавить холанда в список игроков!")
