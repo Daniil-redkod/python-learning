@@ -91,3 +91,63 @@ for user_name, user_info in users.items():
     print(user_name)
     for first, name in user_info.items():
         print(f"\t{first} - {name}")
+
+# Второй вариант
+users = {
+    'maximus': {
+        'first': 'max',
+        'last': 'popov',
+        'location': 'moscow',
+        },
+
+    'sis01': {
+        'first': 'sis',
+        'last': 'zola',
+        'location': 'paris',
+        },
+}
+
+for user_name, user_info in users.items():
+    print(f"\nUsername: {user_name}")
+    fullname = f"{user_info['first']} {user_info['last']}"
+    location = f"{user_info['location']}"
+
+    print(f"\tПолное имя: {fullname.title()}")
+    print(f"\tЛокация: {location.title()}")
+
+# Упражнения
+# 6.7 Люди
+person_1 = {
+        'first_name': 'Maksim',
+        'last_name': 'Bykov',
+        'age': 18,
+        'city': 'Moscow',
+        }
+
+person_2 = {
+        'first_name': 'Andrew',
+        'last_name': 'Alekseev',
+        'age': 22,
+        'city': 'Saint-Petersburg',
+        }
+
+person_3 = {
+        'first_name': 'Anton',
+        'last_name': 'Karpov',
+        'age': 44,
+        'city': 'Tagil',
+        }
+
+peoples = []
+
+peoples.append(person_1)
+peoples.append(person_2)
+peoples.append(person_3)
+
+for people in peoples:
+    print("Человек в списке:")
+    for key, value in people.items():
+        print(f"{key} - {value}")
+    print()
+
+# 6.8 Домашние животные
