@@ -151,3 +151,150 @@ for people in peoples:
     print()
 
 # 6.8 Домашние животные
+pets = []
+
+chaki = {
+    'chaki': {
+            'type_of_animal': 'cat',
+            'owner': 'dan',
+            }
+    }
+
+pity = {
+    'pity': {
+            'type_of_animal': 'dog',
+            'owner': 'max',
+            }
+    }
+
+homa = {
+    'homa':{
+            'type_of_animal': 'humster',
+            'owner': 'stas',
+            }
+    }
+
+pets.append(chaki)
+pets.append(pity)
+pets.append(homa)
+
+print("Информация о домашних животных:\n")
+for pet in pets:
+    for nickname in pet:
+        print(f"{nickname}")
+        for key, value in pet[nickname].items():
+            print(f"\t{key} - {value}")
+    print()
+
+# 6.9 Любимые места
+favorite_places = {
+    'piramida': 'Пирамида - очень красивое место в Каире',
+    'efel': 'Эйфелева баня - замечательное место в Париже',
+    'peterhof': 'Петергоф - город с фонтанами в Санкт-Петербурге'
+    }
+
+person_1 = {
+        'first_name': 'Maksim',
+        'last_name': 'Bykov',
+        'age': 18,
+        'city': 'Moscow',
+        }
+
+person_2 = {
+        'first_name': 'Andrew',
+        'last_name': 'Alekseev',
+        'age': 22,
+        'city': 'Saint-Petersburg',
+        }
+
+person_3 = {
+        'first_name': 'Anton',
+        'last_name': 'Karpov',
+        'age': 44,
+        'city': 'Tagil',
+        }
+
+peoples = {
+        'p1_like_places': {
+            'person_1': person_1['first_name'],
+            'like_place_1': favorite_places['efel'],
+            },
+        'p2_like_places': {
+            'person_2': person_2['first_name'],
+            'like_place_1': favorite_places['efel'],
+            'like_place_2': favorite_places['piramida'],
+            },
+        'p3_like_places': {
+            'person_3': person_3['first_name'],
+            'like_place_1': favorite_places['efel'],
+            'like_place_2': favorite_places['peterhof'],
+            'like_place_3': favorite_places['piramida'],
+            }
+        }
+
+print("Любимые места моих друзей:")
+for people in peoples:
+    print()
+    print(f"--- {people.upper()} ---") 
+    for key, value in peoples[people].items():
+        print(f"{key} - {value}")
+
+print()
+for key, value in favorite_places.items():
+    print(f"{key} - {value}")
+
+
+# 6.10 Любимые числа
+love_numbers = {
+            'макс': [3, 4],
+            'Антон': [5, 7, 8],
+            'ДениС': [6],
+            'Степа': [10, 12],
+            'Петя': [11, 15],
+            }
+
+for name, number in love_numbers.items():
+    if len(number) == 1:
+        print(f"{name.title()} любит число: {number}!")
+    else:
+        print(f"{name.title()} любит числа: {number}!")
+
+# 6.11 Города
+cities = {
+    'москва': {'страна': 'россия',
+               'численность': '13 млн',
+               'памятник': 'мавзолей ленина',
+               },
+    'варшава': {'страна': 'польша',
+                'численность': '2 млн',
+                'памятник': 'варшавская русалочка',
+                },
+    'париж': {'страна': 'франция',
+              'численность': '12 млн',
+              'памятник': 'эйфелева башня',
+              },
+    }
+print("\nЛюбимые места:\n")
+for city in cities:
+    print(f"Город - {city.title()}")
+    for key, value in cities[city].items():
+        print(f"\t{key.title()} - {value.title()}")
+    print()
+
+# 6.12 Расширение
+# Словарь словарей
+alien_0 = {'color': 'green', 'points': 5}
+alien_1 = {'color': 'red', 'points': 10}
+alien_2 = {'color': 'blue', 'points': 15}
+
+aliens = {
+    'Пришелец № 1': alien_0,
+    'Пришелец № 2': alien_1,
+    'Пришелец № 3': alien_2
+    }
+
+for key, value in aliens.items():
+    print(f"{key}")
+    for k, v in value.items():
+        print(f"\t{k} - {v}")
+    print()
